@@ -10,4 +10,5 @@ FROM (
 ) t
 WHERE 
     temperature > prev_temp
-    AND DATEDIFF(recordDate, prev_date) = 1;
+    AND DATEDIFF(recordDate, prev_date) = 1
+    ;
