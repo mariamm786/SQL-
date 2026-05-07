@@ -18,3 +18,5 @@ female_below_avg AS (
 
 SELECT highest_f_salaries_below_total_avg
 FROM female_below_avg;
+
+#practice 
