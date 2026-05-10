@@ -12,4 +12,7 @@ JOIN salaries s
     ON e.emp_no = s.emp_no
 WHERE e.emp_no BETWEEN 10001 AND 10003
   AND s.from_date < '2000-01-01'
-ORDER BY e.emp_no ASC;
+ORDER BY e.emp_no ASC
+;
+
+#practice
