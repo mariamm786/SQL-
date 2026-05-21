@@ -7,4 +7,5 @@ SELECT
 FROM salaries s
 JOIN employees e 
     ON s.emp_no = e.emp_no
-WHERE e.gender = 'M';
+WHERE e.gender = 'M'
+;
