@@ -16,4 +16,5 @@ JOIN
 
 WHERE e.emp_no BETWEEN 10500 AND 10600
 
-WINDOW w as (PARTITION BY e.emp_no ORDER BY s.salary DESC);
+WINDOW w as (PARTITION BY e.emp_no ORDER BY s.salary DESC)
+;
