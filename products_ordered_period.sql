@@ -3,4 +3,5 @@ INNER JOIN Orders AS O
 ON O.product_id = P.product_id
 WHERE order_date LIKE '2020-02-%'
 GROUP BY O.product_id
-HAVING SUM(unit) >= 100;
+HAVING SUM(unit) >= 100
+;
