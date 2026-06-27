@@ -5,4 +5,5 @@ from Employee emp
 left join Bonus bon
 
 on emp.empId = bon.empId
-where bonus < 1000 or bonus IS NULL; 
+where bonus < 1000 or bonus IS NULL
+; 
