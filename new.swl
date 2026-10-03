@@ -1,0 +1,21 @@
+-- SQL Query using Window Functions (Easy Example)
+-- Calculate running total of sales by employee
+
+SELECT 
+    employee_id,
+    employee_name,
+    sale_date,
+    sale_amount,
+    SUM(sale_amount) OVER (
+        PARTITION BY employee_id 
+        ORDER BY sale_date
+    ) AS running_total,
+    AVG(sale_amount) OVER (
+        PARTITION BY employee_id
+    ) AS avg_sale_per_employee,
+    ROW_NUMBER() OVER (
+        PARTITION BY employee_id 
+        ORDER BY sale_amount DESC
+    ) AS sale_rank
+FROM sales
+ORDER BY employee_id, sale_date;
